@@ -2,7 +2,8 @@
 
 '''
  1. Make the following program work.
-   '''  
+   '''
+print("hello")
 print("This program takes three numbers and returns the sum.")
 total = 0
 
