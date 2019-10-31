@@ -17,6 +17,33 @@ can=6
 done=False
 
 while not done:
+  water=random.randrange(1,21)
+  if water==1:
+      print("You have found a water place to drink from!") # water place 1 in 20
+      can=6
+      thir=0
+      tir=0
+  if thir>4 and thir<6:
+      print("You are thirsty drink quick!")
+  elif thir>6:
+      print("You died of thirst!")
+      done=True
+  elif tir>5 and tir<8:
+      print("You are getting tired")
+  elif tir>8:
+      print("You died from exhaustion")
+      done=True
+  elif mi-hun<0:
+      print("The hunter caught you!")
+      done=True
+  elif mi-hun<15 and mi-hun>0:
+      print("The hunter is getting close!!")
+  elif mi>200:
+      print("You won the game!!!!!")
+      done=True
+
+
+
   print("A.Drink from you spiritual canteen")
   print("B.Run moderate speed")
   print("C.Run full speed")
@@ -26,7 +53,6 @@ while not done:
   qu=str(input(" Choose one>>>>!!"))
   if qu.lower()=="q":
       done=True
-      break
   elif qu.lower()=="e":
       print("Miles traveled:",mi)
       print("Available drinks from canteen:",can)
@@ -61,33 +87,3 @@ while not done:
           print("Wow there!! sorry you have no more water in your canteen.")
   else:
       print("Not an option")
-
-
-
-  water=random.randrange(1,21)
-  if water==1:
-      print("You have found a water place to drink from!") # water place 1 in 20
-      can=6
-      thir=0
-      tir=0
-  if thir>4 and thir<6:
-      print("You are thirsty drink quick!")
-  elif thir>6:
-      print("You died of thirst!")
-      done=True
-  elif tir>5 and tir<8:
-      print("You are getting tired")
-  elif tir>8:
-      print("You died from exhaustion")
-      done=True
-  elif mi-hun<0:
-      print("The hunter caught you!")
-      done=True
-  elif mi-hun<15 and mi-hun>0:
-      print("The hunter is getting close!!")
-  elif mi>200:
-      print("You won the game!!!!!")
-      done=True
-
-
-
